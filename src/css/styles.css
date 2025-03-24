@@ -42,6 +42,13 @@ header nav ul{
     justify-content: center;
     gap: 14px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sign_in:hover{
+    background: #7D4CE6;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(112, 68, 204, 0.3);
 }
 
 .lang_change{
@@ -91,7 +98,7 @@ nav ul li{
 }
 
 .container{
-    padding: 0 18.13vw;
+    padding: 0 18vw;
 }
 
 .main_page{
@@ -132,6 +139,19 @@ h1{
     justify-content: space-between;
     padding-left: 47px;
     cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.start_now_btn:hover {
+    background: #7044CC;
+}
+
+.start_now_btn:hover .start_btn_text {
+    color: white;
+}
+
+.start_now_btn:hover img {
+    filter: brightness(1);
 }
 
 .start_btn_text{
@@ -150,10 +170,10 @@ h1{
 }
 
 .stats_item{
-    min-width: 320px;
+    min-width: 20vw;
     min-height: 267px;
     flex-shrink: 0;
-    padding-left: 67px;
+    padding-left: 4.18vw;
 }
 
 .stats_header{
@@ -193,13 +213,13 @@ h1{
 
 .trust_wrapper{
     display: flex;
-    gap: 13px;
+    gap: 0.8vw;
     padding-top: 74px;
 }
 
 .trust_item{
     display: flex;
-    width: 245px;
+    width: 15vw;
     height: 143px;
     flex-shrink: 0;
     align-items: center;
@@ -215,4 +235,82 @@ h1{
     font-style: normal;
     font-weight: 550;
     line-height: 99%; /* 54.45px */
+}
+
+.steps{
+    padding-top: 96px;
+}
+
+.step_item{
+    min-height: 369px;
+    padding-top: 79px;
+}
+
+.step_item > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.step_number{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #5F37D0;
+    color: transparent;
+    font-family: HelveticaNeueCyr;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 99%; /* 99px */
+}
+
+.step_header{
+    color: #000;
+    font-family: HelveticaNeueCyr;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 99%; /* 34.65px */
+}
+
+.step_description{
+    color: #677488;
+    font-family: HelveticaNeueCyr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 27.2px */
+}
+
+.reg_btn{
+    border-radius: 100px;
+    background: #7044CC;
+    width: 11.4vw;
+    height: 40px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 231.5%; /* 34.725px */
+    text-transform: uppercase;
+    border-style: none;
+    margin-top: 36px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reg_btn:hover{
+    background: #7D4CE6;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(112, 68, 204, 0.3);
+}
+
+.banks{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: start;
 }
