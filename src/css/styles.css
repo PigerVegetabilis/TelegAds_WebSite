@@ -1,3 +1,8 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
 html{
     background: url("../img/bg.png") no-repeat;
 }
@@ -379,3 +384,54 @@ h1{
     top: 105px;
 }
 
+.registration{
+    padding-left: 19.375vw;
+    padding-top: 137px;
+    display: flex;
+    gap: 12vw;
+    background: url('../img/reg_bg.jpg');
+}
+
+.reg_header{
+    color: #FFF;
+    text-align: center;
+    font-family: HelveticaNeueCyr;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 99%; /* 54.45px */
+}
+
+.reg_description{
+    color: #FFF;
+    font-family: HelveticaNeueCyr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 27.2px */
+}
+
+.create_acc_btn{
+    margin-top: 36px;
+    margin-bottom: 100px;
+    width: 12.75vw;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.30);
+    color: #FFF;
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 231.5%; /* 34.725px */
+    text-transform: uppercase;
+    border-style: none;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.create_acc_btn:hover {
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.40);
+}
