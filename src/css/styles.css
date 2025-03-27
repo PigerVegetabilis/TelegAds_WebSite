@@ -3,6 +3,10 @@ body, html{
     padding: 0;
 }
 
+*{
+    box-sizing:border-box;
+}
+
 html{
     background: url("../img/bg.png") no-repeat;
 }
@@ -25,6 +29,15 @@ header nav ul{
     gap: 3.313vw;
     list-style-type: none;
     padding-left: 8.313vw;
+}
+
+header nav ul a{
+    transition: all 0.3s ease;
+    display: block;
+}
+
+header nav ul a:hover{
+    transform: translateY(-15%);
 }
 
 .sign_in{
@@ -435,3 +448,76 @@ h1{
     background: rgba(255, 255, 255, 0.50);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.40);
 }
+
+.questions{
+    padding-top: 89px;
+    padding-left: 6vw;
+}
+
+.q_wrapper{
+    display: flex;
+}
+
+.q_text{
+    width: 44.5vw;
+    height: 626px;
+    flex-shrink: 0;
+    padding-left: 13.5625vw;
+    padding-top: 202px;
+    background: url('../img/q_header_bg.jpg');
+}
+
+.q_header{
+    color: var(--color-5, #FFF);
+    font-family: HelveticaNeueCyr;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 62px; /* 112.727% */
+}
+
+.q_subheader{
+    padding-top: 30px;
+    color: #FFF;
+    font-family: "Gotham Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 188.889% */
+}
+
+.q_contacts{
+    width: 44.5vw;
+    padding-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-6, #EEF4FD);
+    padding-top: 155px;
+    gap: 18px;
+}
+
+.q_contacts_item{
+    display: flex;
+    width: 29.3125vw;
+    height: 99px;
+    flex-shrink: 0;
+    background: none;
+    border: 1px solid #A5A5A5;
+    padding-left: 6.875vw;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; /* 242.857% */
+    text-transform: uppercase;
+    cursor: pointer; 
+}
+
+.q_contacts a{
+    width: 29.3125vw;
+}
+
