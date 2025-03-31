@@ -9,7 +9,8 @@ body, html{
 }
 
 html{
-    background: url("../img/bg.png") cover/no-repeat;
+    background: url("../img/mobile_bg.svg") no-repeat;
+    background-size: cover;
 }
 
 a{
@@ -62,7 +63,73 @@ h1{
     line-height: 91.5%; /* 77.775px */
     padding: 0;
     margin: 0;
+    width: 61.8421vw;
 }
+
+.container{
+    padding: 0 5vw;
+}
+
+.main_subheader{
+    padding-top: 40px;
+    color: #677488;
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 27.2px */
+    width: 90.2632vw;
+}
+
+.start_now_btn{
+    border-radius: 125px;
+    border: 1px solid #7044CC;
+    width: 281px;
+    height: 90px;
+    flex-shrink: 0;
+    margin-top: 36px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 47px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.start_btn_text{
+    color: #7044CC;
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 231.5%; /* 34.725px */
+    text-transform: uppercase;
+}
+
+.stats_header{
+    color: #7044CC;
+    font-family: HelveticaNeueCyr;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 123.836%; /* 68.11px */
+    padding-top: 25px;
+}
+
+.stats_subheader{
+    color: #000;
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.9%; /* 30.042px */
+    width: 199px;
+    padding-top: 25px;
+}
+
+#first_stats_item{
+    padding-top: 68px;}
 
 @media (min-width: 1400px) {
     body, html{
