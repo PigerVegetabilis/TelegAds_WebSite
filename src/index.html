@@ -6,6 +6,8 @@
     <title>TelegAds</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -13,12 +15,11 @@
             <a href="index.html"><span class="teleg_sign">teleg</span><span class="ads_sign">ads</span></a>
         </div>
         <div class="lang_change">
-            <a href="" class="link_lang">
-                ru
-                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="6" viewBox="0 0 7 6" fill="#650DF0">
-                    <path d="M3.5 6L0.468911 0.75L6.53109 0.75L3.5 6Z" fill="#650DF0"/>
-                </svg>
-            </a>
+            <div class="language_list">
+                <a href="javascript:void(0)" class="link_lang current" onclick="langList(this)">ru</a>
+                <a href="" class="link_lang" onclick="changeLang(this)" style="display: none;">en</a>
+            </div>
+            <img src="icons/arrow.svg" alt="" class="list_arrow">
         </div>
         <nav>
             <ul>
@@ -192,5 +193,34 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="foot_wrapper_first">
+                <nav>
+                    <div class="foot_nav_header">Навигация</div>
+                    <ul>
+                        <li><a href="">Каталог каналов</a></li>
+                        <li><a href="">Рекламодателям</a></li>
+                        <li><a href="">Администраторам</a></li>
+                        <li><a href="">Агентствам</a></li>
+                        <li><a href="">Реферальная программа</a></li>
+                        <li><a href="">Статьи</a></li>
+                    </ul>
+                </nav>
+                <div class="foot_contact">
+                    <div class="foot_contact_header">Связь с нами</div>
+                    <a href="" class="foot_contact_text">support@adgram.io</a>
+                </div>
+            </div>
+            <hr>
+            <div class="foot_wrapper_second">
+                <div class="company_name">©TYelegards 2022</div>
+                <div class="logo">
+                    <a href="index.html"><span class="teleg_sign">teleg</span><span class="ads_sign">ads</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
