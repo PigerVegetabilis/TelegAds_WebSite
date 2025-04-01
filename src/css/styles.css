@@ -11,9 +11,11 @@ body, html{
 }
 
 html{
-    background: url("../img/mobile_bg.svg") no-repeat;
-    background-size: cover;
     overflow-x: hidden;
+    background: url("../img/mobile_bg.png") no-repeat;
+    background-size: 100% 30%;
+    /* background-position: top center; */
+    max-width: 100%;
 }
 
 a{
@@ -164,6 +166,74 @@ h1{
     align-items: center;
     justify-content: center;
     border: 1px solid #E1E1E1;
+}
+
+.step_number{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #5F37D0;
+    color: transparent;
+    font-family: HelveticaNeueCyr;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 99%; /* 99px */
+}
+
+.step_header{
+    color: #000;
+    font-family: HelveticaNeueCyr;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 99%; /* 34.65px */
+}
+
+.step_description{
+    color: #677488;
+    font-family: HelveticaNeueCyr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 27.2px */
+    padding-top: 35px;
+}
+
+.reg_btn{
+    border-radius: 100px;
+    background: #7044CC;
+    width: 47.8947vw;
+    height: 40px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 231.5%; /* 34.725px */
+    text-transform: uppercase;
+    border-style: none;
+    margin-top: 36px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.step_item{
+    padding-top: 150px;
+}
+
+#step-2 >.container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.banks{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: start;
 }
 
 @media (min-width: 1400px) {
@@ -458,6 +528,11 @@ h1{
     .step_item > .container{
         display: flex;
         justify-content: space-between;
+    }
+
+    #step-2 > .container{
+        background: #F6F6F6;
+        flex-direction: row;
     }
     
     .step_number{
