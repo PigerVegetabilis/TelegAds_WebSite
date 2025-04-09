@@ -258,7 +258,71 @@ h1{
     margin: 0 auto; 
 }
 
+.reasons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vw;
+    justify-content: center;
+    row-gap: 180px;
+    padding-top: 105px;
+    position: relative;
+    margin-bottom: 179px;
+    min-height: 1000px;
+}
 
+.reason_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90.5263vw;
+    height: 90.5263vw;
+    background-image: url('../img/eclipse.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.reason_header{
+    color: #7044CC;
+    text-align: center;
+    font-family: HelveticaNeueCyr;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 99%; /* 19.8px */
+}
+
+.reason_description{
+    color: #677488;
+    text-align: center;
+    font-family: HelveticaNeueCyr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 27.2px */
+    width: 69vw;
+}
+
+.reasons hr{
+    margin: 0 auto;
+    width: 40px;
+    height: 2px;
+    background-color: #7044CC;
+    border-radius: 10px;
+    border-style: none;
+    margin-top: 24px;
+    margin-bottom: 17px;
+}
+
+#second_reason{
+    position: absolute;
+    top: 440px;
+}
+
+#third_reason{
+    position: absolute;
+    top: 770px;
+}
 
 @media (min-width: 1400px) {
     body, html{
@@ -701,6 +765,7 @@ h1{
 
     #second_reason{
         position: absolute;
+        top: auto;
         right: 26.5vw;
         
     }
