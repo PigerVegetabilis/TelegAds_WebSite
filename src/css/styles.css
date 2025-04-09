@@ -71,6 +71,11 @@ h1{
     width: 61.8421vw;
 }
 
+.header-point::after{
+    content: "\A"; /* Символ переноса строки */
+    white-space: pre;
+}
+
 .container{
     padding: 0 5vw;
 }
@@ -234,6 +239,23 @@ h1{
     gap: 15px;
     align-items: center;
     justify-content: start;
+}
+
+.start_working{
+    padding-top: 138px;
+}
+
+.start_working_header{
+    color: #7044CC;
+    text-align: center;
+    font-family: HelveticaNeueCyr;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 99%; /* 54.45px */
+    max-width: 75.7895vw;
+    padding: 0 70px;
+    margin: 0 auto; 
 }
 
 @media (min-width: 1400px) {
@@ -405,6 +427,7 @@ h1{
         font-style: normal;
         font-weight: 400;
         line-height: 160%; /* 27.2px */
+        width: 35.3125vw;
     }
     
     .start_now_btn{
@@ -565,6 +588,7 @@ h1{
         font-style: normal;
         font-weight: 400;
         line-height: 160%; /* 27.2px */
+        width: 28.1250vw;
     }
     
     .reg_btn{
